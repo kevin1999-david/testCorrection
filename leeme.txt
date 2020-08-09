@@ -1,0 +1,1 @@
+Ejecutar la página index con el LiveServer ya que utiliza módulo js

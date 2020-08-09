@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css">
+
+    <style>
+        body {
+            padding-top: 60px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        .form-check-label {
+            cursor: pointer;
+            margin-right: 5px;
+            margin-bottom: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><strong>KEVIN CATUCUAMBA</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" id="start" class="nav-link">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Evaluación
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                            <a href="#" class="dropdown-item">Puntaje que obtuve</a>
+                            <a href="#" class="dropdown-item">PDF de las preguntas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Acerca de mí</a>
+                    </li>
+                </ul>
+
+                <form action="#" class="form-inline my-2 my-lg-0">
+                    <input id="valuen" type="text" class="form-control mr-sm-2" placeholder="Ir a pregunta #" aria-label="Buscar">
+                    <button id="red" class="btn btn-primary my-sm-0" type="submit">Ir</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h2> <strong>Corrección de la prueba</strong> </h2>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                    <button id="review" class="btn btn-success m-1 btn-block">Calificar</button>
+                    <a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="bloque1" class="btn btn-primary btn-block m-1" id="btnExplication">Ver
+                        Explicación</a>
+                    <button href="solution.html" id="prev" class="btn btn-danger m-1 btn-block">Atrás</button>
+                    <button href="solution.html" id="next" class="btn btn-danger m-1 btn-block">Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="container1">
+
+    </div>
+
+    <div class="container msg-info">
+        <div class="row">
+            <div class="col">
+                <div id="bloque1" class="collapse">
+                    <div class="card mb-4" id="explication">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <script src="js/bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/page.js" type="module"></script>
+    <script src="js/enumerator.js"></script>
+
+</body>
+
+
+
+
+</html>
